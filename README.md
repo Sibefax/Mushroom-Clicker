@@ -12,7 +12,8 @@ A compact project featuring a modular upgrade system and local JSON-based persis
   - Click Upgrades — increase points per click.
   - Passive Upgrades — increase points per second.
 - Modular components for upgrades (Upgrade and ClickUpgrade) that are easy to configure from the Inspector.
-- Local JSON save/load (reliable persistence across sessions).
+- Local JSON save/load with reset function (reliable persistence across sessions).
+- Pause Menu
 - UI using TextMesh Pro and Unity UI components.
 - Built with Universal Render Pipeline (URP) assets included.
 
