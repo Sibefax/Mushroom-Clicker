@@ -1,20 +1,7 @@
 # Mushroom Clicker 🍄
 
 Mushroom Clicker is a 2D incremental (idle) clicker built with Unity and C#.  
-A compact project featuring a modular upgrade system and local JSON-based persistence — suitable for showcasing in a portfolio.
-
----
-
-## Key features ✨
-
-- Click-based progression with both active (per-click) and passive (per-second) income.
-- Two upgrade systems:
-  - Click Upgrades — increase points per click.
-  - Passive Upgrades — increase points per second.
-- Modular components for upgrades (Upgrade and ClickUpgrade) that are easy to configure from the Inspector.
-- Local JSON save/load (reliable persistence across sessions).
-- UI using TextMesh Pro and Unity UI components.
-- Built with Universal Render Pipeline (URP) assets included.
+A compact project featuring a modular upgrade system and local JSON-based persistence.
 
 ---
 
@@ -49,7 +36,7 @@ A compact project featuring a modular upgrade system and local JSON-based persis
 3. Let Unity resolve any packages if prompted.
 4. Open the main scene in Assets/Scenes and press Play.
 
-To create a build: File → Build Settings → choose platform → Build.
+Also you can download build in releases.
 
 ---
 
