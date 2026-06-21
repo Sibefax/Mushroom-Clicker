@@ -86,5 +86,7 @@ public class StoreManager : MonoBehaviour
         exactBalance = 0;
         
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        Time.timeScale = 1;
     }
 }
