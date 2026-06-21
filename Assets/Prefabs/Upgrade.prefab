@@ -148,12 +148,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 379e89a848e877941bbd31215fda0dc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  nameOfUpgrade: DefaultName
   baseCost: 1
   multiplier: 1.15
   baseIncome: 1
   button: {fileID: 7018997352384252574}
   levelAndIncomeText: {fileID: 568524324549313461}
   costText: {fileID: 7241879172260015522}
+  nameText: {fileID: 7283393244098698978}
   levelNumber: 0
   wasBought: 0
 --- !u!1 &2558405566700880819

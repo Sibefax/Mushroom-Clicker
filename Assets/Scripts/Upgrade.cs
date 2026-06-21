@@ -4,12 +4,14 @@ using TMPro;
 
 public class Upgrade : MonoBehaviour
 {
+    [SerializeField] private string nameOfUpgrade = "DefaultName";
     [SerializeField] private int baseCost = 1;  // Cost on first level
     [SerializeField] private float multiplier = 1.15f;
     [SerializeField] private float baseIncome = 1f; // Income on first level
     [SerializeField] private Button button;
     [SerializeField] private TMP_Text levelAndIncomeText;
     [SerializeField] private TMP_Text costText;
+    [SerializeField] private TMP_Text nameText;
 
     public int levelNumber; // Number of bought upgrades
     public bool wasBought;
@@ -29,6 +31,7 @@ public class Upgrade : MonoBehaviour
     {
         levelAndIncomeText.text = $"{levelNumber} x {GlobalMethods.MakeShorter(GetCurrentIncome())}/s";
         costText.text = GlobalMethods.MakeShorter(GetUpgradeCost());
+        nameText.text = levelNumber > 0 ? nameOfUpgrade : "???";
     }
 
     public void MakeEnabled(bool isEnabled)
