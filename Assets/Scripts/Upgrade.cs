@@ -27,7 +27,7 @@ public class Upgrade : MonoBehaviour
         return Mathf.RoundToInt(baseIncome * levelNumber);
     }
 
-    public void UpdateUI()
+    public void UpdateUpgradeUI()
     {
         levelAndIncomeText.text = $"{levelNumber} x {GlobalMethods.MakeShorter(GetCurrentIncome())}/s";
         costText.text = GlobalMethods.MakeShorter(GetUpgradeCost());

@@ -8,8 +8,16 @@ public class UpgradeSaveData
 }
 
 [System.Serializable]
+public class ClickUpgradeSaveData
+{
+    public string clickUpgradeName;
+    public bool isPurchased;
+}
+
+[System.Serializable]
 public class BalanceSaveData
 {
     public double balance;
-    public List<UpgradeSaveData> buildings = new List<UpgradeSaveData>();
+    public List<UpgradeSaveData> upgrades = new List<UpgradeSaveData>();
+    public List<ClickUpgradeSaveData> clickUpgrades = new List<ClickUpgradeSaveData>();
 }
