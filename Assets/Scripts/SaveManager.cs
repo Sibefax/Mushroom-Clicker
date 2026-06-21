@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SaveManager : MonoBehaviour
 {
@@ -82,5 +82,11 @@ public class SaveManager : MonoBehaviour
         {
             SaveGame();
         }
+    }
+
+    public void OnResetSaveButtonPressed()
+    {
+        storeManager.ResetAll();
+        SaveGame();
     }
 }

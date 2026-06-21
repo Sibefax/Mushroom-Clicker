@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StoreManager : MonoBehaviour
 {
@@ -69,5 +70,21 @@ public class StoreManager : MonoBehaviour
         currentBalance = (long)exactBalance;
         balanceText.text = GlobalMethods.MakeShorter(currentBalance);
     }
-    
+
+    public void ResetAll()
+    {
+        foreach (Upgrade upgrade in upgrades)
+        {
+            upgrade.levelNumber = 0;
+        }
+
+        foreach (ClickUpgrade clickUpgrade in clickUpgrades)
+        {
+            clickUpgrade.isPurchased = false;
+        }
+        
+        exactBalance = 0;
+        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
