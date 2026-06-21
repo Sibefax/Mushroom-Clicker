@@ -5,11 +5,11 @@ public class StoreManager : MonoBehaviour
 {
     [SerializeField] private Upgrade[] upgrades;
     [SerializeField] private TMP_Text balanceText;
-    [SerializeField] private long currentBalance;
     [SerializeField] private long pointsPerClick = 1;
     [SerializeField] private long pointsPerSecond;
 
-    private double _exactBalance;
+    public double exactBalance;
+    public long currentBalance;
     
     
     private void Update()
@@ -20,7 +20,7 @@ public class StoreManager : MonoBehaviour
             pointsPerSecond += upgrade.GetCurrentIncome();
             if (upgrade.wasBought)
             {
-                _exactBalance -= upgrade.GetUpgradeCost();
+                exactBalance -= upgrade.GetUpgradeCost();
                 upgrade.wasBought = false;
                 upgrade.levelNumber++;
             }
@@ -28,17 +28,16 @@ public class StoreManager : MonoBehaviour
             upgrade.MakeEnabled(upgrade.GetUpgradeCost() <= currentBalance);
         }
         
-        _exactBalance += (double)pointsPerSecond * Time.deltaTime;
-        currentBalance = (long)_exactBalance;
+        exactBalance += (double)pointsPerSecond * Time.deltaTime;
+        currentBalance = (long)exactBalance;
         balanceText.text = GlobalMethods.MakeShorter(currentBalance);
     }
 
     public void OnMushroomClick()
     {
-        _exactBalance += pointsPerClick;
-        currentBalance = (long)_exactBalance;
+        exactBalance += pointsPerClick;
+        currentBalance = (long)exactBalance;
         balanceText.text = GlobalMethods.MakeShorter(currentBalance);
     }
-
     
 }

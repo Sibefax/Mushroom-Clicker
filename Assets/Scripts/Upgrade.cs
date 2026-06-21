@@ -4,7 +4,6 @@ using TMPro;
 
 public class Upgrade : MonoBehaviour
 {
-    [SerializeField] private string nameOfUpgrade = "DefaultName";
     [SerializeField] private int baseCost = 1;  // Cost on first level
     [SerializeField] private float multiplier = 1.15f;
     [SerializeField] private float baseIncome = 1f; // Income on first level
@@ -13,6 +12,7 @@ public class Upgrade : MonoBehaviour
     [SerializeField] private TMP_Text costText;
     [SerializeField] private TMP_Text nameText;
 
+    public string nameOfUpgrade = "DefaultName";
     public int levelNumber; // Number of bought upgrades
     public bool wasBought;
     
