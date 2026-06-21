@@ -15,12 +15,12 @@
 # [attr]unity-yaml        merge=unityyamlmerge text linguist-language=yaml linguist-generated
 
 # Unity source files
-*.cginc                 text
-*.compute               text linguist-language=hlsl
+*.cginc                 text linguist-detectable=false
+*.compute               text linguist-language=hlsl linguist-detectable=false
 *.cs                    text diff=csharp
-*.hlsl                  text linguist-language=hlsl
-*.raytrace              text linguist-language=hlsl
-*.shader                text
+*.hlsl                  text linguist-language=hlsl linguist-detectable=false
+*.raytrace              text linguist-language=hlsl linguist-detectable=false
+*.shader                text linguist-detectable=false
 
 # Unity JSON files
 *.asmdef                unity-json
@@ -169,3 +169,4 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+Packages/** linguist-vendored
