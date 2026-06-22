@@ -2,6 +2,8 @@
 
 Mushroom Clicker is a 2D incremental (idle) clicker built with Unity and C#.  
 A compact project featuring a modular upgrade system and local JSON-based persistence.
+---
+<img width="541" height="851" alt="MushromClick" src="https://github.com/user-attachments/assets/0ec495d2-57b2-40e9-b987-938cd3677270" />
 
 ---
 
@@ -16,6 +18,8 @@ A compact project featuring a modular upgrade system and local JSON-based persis
 - Pause Menu
 - UI using TextMesh Pro and Unity UI components.
 - Built with Universal Render Pipeline (URP) assets included.
+---
+<img width="751" height="318" alt="UpgradeBuy" src="https://github.com/user-attachments/assets/2bff93ba-e40c-4a5d-9d73-1cf56485f594" />
 
 ---
 
@@ -83,9 +87,9 @@ Also you can download build in releases.
 
 ## Credits & assets
 
-- Mushroom pack by peterfield2006 — https://opengameart.org/content/mushroom-pixel-art-pack-32x32-free-game-assets  
-- Forest Background — https://qdanp.itch.io/forest-stage-escenario-bosque  
-- UI Pack — https://crusenho.itch.io/complete-ui-essential-pack (licensed under CC BY 4.0)
+- [Mushroom pack](https://opengameart.org/content/mushroom-pixel-art-pack-32x32-free-game-assets) by peterfield2006
+- [Forest Background](https://qdanp.itch.io/forest-stage-escenario-bosque) 
+- [UI Pack](https://crusenho.itch.io/complete-ui-essential-pack) (licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 
 Please ensure to keep required attribution text from the asset authors if any license demands it.
 
